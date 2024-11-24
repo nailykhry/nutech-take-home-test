@@ -12,7 +12,7 @@ module.exports = {
         description VARCHAR(255) NOT NULL,
         total_amount INT NOT NULL,
         created_on DATETIME DEFAULT CURRENT_TIMESTAMP,
-        CONSTRAINT fk_transaction_member_email FOREIGN KEY (email) REFERENCES Members(email) ON DELETE CASCADE
+        CONSTRAINT fk_transaction_member_email FOREIGN KEY (email) REFERENCES members(email) ON DELETE CASCADE
       );
     `);
   },
