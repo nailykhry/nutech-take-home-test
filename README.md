@@ -36,5 +36,5 @@ Menjalankan Aplikasi
 Setelah selesai mengatur database, Anda dapat menjalankan aplikasi dengan perintah:
 
 ```bash
-npm start
+nodemon app.js
 ```
