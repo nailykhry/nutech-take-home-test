@@ -1,15 +1,10 @@
 {
   "development": {
     "username": "root",
-    "password": "OsXgvLDVsLOorxgsrqDiyrFiVmTMdJpH",
-    "database": "railway",
-    "port": 47847,   
-    "host": "junction.proxy.rlwy.net",
-    "dialect": "mysql",
-    "dialectOptions": {
-      "connectTimeout": 10000,                
-      "socketTimeout": 10000                
-    }
+    "password": null,
+    "database": "nutech_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
