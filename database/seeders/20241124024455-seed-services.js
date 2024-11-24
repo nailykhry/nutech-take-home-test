@@ -2,7 +2,7 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    return queryInterface.bulkInsert('services', [
+    return queryInterface.bulkInsert('Services', [
       {
         service_code: 'PAJAK',
         service_name: 'Pajak PBB',
@@ -79,6 +79,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('services', null, {});
+    return queryInterface.bulkDelete('Services', null, {});
   }
 };
