@@ -4,7 +4,7 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.sequelize.query(`
-      CREATE TABLE Wallets (
+      CREATE TABLE wallets (
         id INT AUTO_INCREMENT PRIMARY KEY,
         email VARCHAR(255) NOT NULL,
         balance INT NOT NULL,
@@ -15,7 +15,7 @@ module.exports = {
 
   async down (queryInterface, Sequelize) {
     await queryInterface.sequelize.query(`
-      DROP TABLE IF EXISTS Wallets;
+      DROP TABLE IF EXISTS wallets;
     `);
   }
 };

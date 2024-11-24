@@ -2,7 +2,7 @@
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    return queryInterface.bulkInsert('Banners', [
+    return queryInterface.bulkInsert('banners', [
       {
         banner_name: 'Banner 1',
         banner_image: 'https://nutech-integrasi.app/dummy.jpg',
@@ -37,6 +37,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('Banners', null, {});
+    return queryInterface.bulkDelete('banners', null, {});
   }
 };

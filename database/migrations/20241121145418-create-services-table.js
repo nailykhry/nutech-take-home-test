@@ -4,7 +4,7 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.sequelize.query(`
-      CREATE TABLE Services (
+      CREATE TABLE services (
         id INT AUTO_INCREMENT PRIMARY KEY,
         service_code VARCHAR(15) NOT NULL,
         service_name VARCHAR(255) NOT NULL,
@@ -16,7 +16,7 @@ module.exports = {
 
   async down (queryInterface, Sequelize) {
     await queryInterface.sequelize.query(`
-      DROP TABLE IF EXISTS Services;
+      DROP TABLE IF EXISTS services;
     `);
   }
 };

@@ -4,7 +4,7 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.sequelize.query(`
-      CREATE TABLE Transactions (
+      CREATE TABLE transactions (
         id INT AUTO_INCREMENT PRIMARY KEY,
         invoice_number VARCHAR(15) NOT NULL UNIQUE,
         email VARCHAR(255) NOT NULL,
@@ -19,7 +19,7 @@ module.exports = {
 
   async down (queryInterface, Sequelize) {
     await queryInterface.sequelize.query(`
-      DROP TABLE IF EXISTS Transactions;
+      DROP TABLE IF EXISTS transactions;
     `);
   }
 };

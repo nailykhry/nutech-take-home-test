@@ -4,7 +4,7 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.sequelize.query(`
-      CREATE TABLE Banners (
+      CREATE TABLE banners (
         id INT AUTO_INCREMENT PRIMARY KEY,
         banner_name VARCHAR(255) NOT NULL,
         banner_image VARCHAR(255) NOT NULL,
@@ -15,7 +15,7 @@ module.exports = {
 
   async down (queryInterface, Sequelize) {
     await queryInterface.sequelize.query(`
-      DROP TABLE IF EXISTS Banners;
+      DROP TABLE IF EXISTS banners;
     `);
   }
 };
